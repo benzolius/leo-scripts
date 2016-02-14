@@ -18,7 +18,7 @@ for p in c.all_positions():
                     print(p.h)
 
             except Exception as exc:
-                print('---------------------------- Exception: -------------------- {}'.format(exc))
+                g.es_exception()
 
         # Corrects empty lines between main blocks
         else:
@@ -42,4 +42,4 @@ for p in c.all_positions():
                     p.b = '{}\n'.format(p.b.rstrip())
 
     except Exception as exc:
-        print('---------------------------- Exception: -------------------- {}'.format(exc))
+        g.es_exception()
